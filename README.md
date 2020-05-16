@@ -26,6 +26,6 @@ Rails: 6.0.3
 - [ ] keep expanding db!
 
 ## Shoutout
-I got my inspiration from Hyram's Youtube channel of him reviewing different skincare products.
+I got my inspiration from [Hyram's Youtube channel](https://www.youtube.com/channel/UC2sYit3cZ2CuD_8FHYH7O_Q) of him reviewing different skincare products.
 Check out his stuff!!
 
