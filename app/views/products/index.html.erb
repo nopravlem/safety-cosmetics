@@ -1,2 +1,12 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<ul class="list-group">
+    <% @products.each do |product| %>
+        <li class="list-group-item">
+            <%= product.name %>
+            <%= product.company %>
+            <%= product.price %>
+            <%= product.picture %>
+            <%= product.buy_online %>
+            <%= product.ingredients %>
+        </li>
+    <% end %>
+</ul>

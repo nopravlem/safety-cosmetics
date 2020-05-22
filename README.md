@@ -16,6 +16,7 @@ Here's a blog of the journey through this project.
 ```
 Ruby: 2.7.1
 Rails: 6.0.3
+PostgreSQL: 12.3
 ```
 
 ## Todo
