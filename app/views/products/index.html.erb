@@ -1,12 +1,16 @@
 <ul class="list-group">
     <% @products.each do |product| %>
         <li class="list-group-item">
-            <%= product.name %>
-            <%= product.company %>
-            <%= product.price %>
-            <%= product.picture %>
-            <%= product.buy_online %>
-            <%= product.ingredients %>
+            <%= link_to product.buy_online, class: "clickable-item" do %>
+                <div class="image-wrapper">
+                    <img class='list-item-image' src=<%= asset_path(product.picture) %> />
+                </div>
+                <div class='list-item-information'>
+                    <div class='name'><%= product.name %></div>
+                    <div class='company'><%= product.company %></div>
+                    <div class='price'><%= product.price %></div>
+                </div>
+            <% end %>
         </li>
     <% end %>
 </ul>

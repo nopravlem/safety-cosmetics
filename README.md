@@ -17,6 +17,7 @@ Here's a blog of the journey through this project.
 Ruby: 2.7.1
 Rails: 6.0.3
 PostgreSQL: 12.3
+Bootstrap: 4.0.0
 ```
 
 ## Todo
@@ -25,6 +26,7 @@ PostgreSQL: 12.3
 - [ ] feedback button
 - [ ] be able to take in skin type
 - [ ] keep expanding db!
+- [ ] popular look up
 
 ## Shoutout
 I got my inspiration from [Hyram's Youtube channel](https://www.youtube.com/channel/UC2sYit3cZ2CuD_8FHYH7O_Q) of him reviewing different skincare products.
