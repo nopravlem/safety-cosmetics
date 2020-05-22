@@ -1,0 +1,61 @@
+body {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.list-item-image {
+  max-height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.list-group-item {
+  margin-top: 1.5rem;
+}
+
+.clickable-item {
+  display: flex;
+  color: initial;
+
+  &:hover {
+    text-decoration: none;
+    color: initial;
+  }
+
+  .image-wrapper {
+    width: 200px;
+  }
+}
+
+.list-item-information {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 2rem;
+
+  .name {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .company {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #777;
+  }
+
+  .price {
+
+  }
+}
+
+.product-wrapper {
+  display: flex;
+
+  .image-wrapper img {
+    max-height: 400px;
+  }
+}
+

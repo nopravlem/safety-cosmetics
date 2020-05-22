@@ -4,7 +4,6 @@ class ProductsController < ApplicationController
   end
 
   def show
-    byebug
     @product = Product.find(params[:id])
   end
 end

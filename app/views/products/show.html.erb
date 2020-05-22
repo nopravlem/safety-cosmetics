@@ -1,2 +1,17 @@
-<h1>Products#show</h1>
-<p>Find me in app/views/products/show.html.erb</p>
+
+<div class='product-wrapper'>
+  <div class="image-wrapper">
+    <img class='' src=<%= asset_path(@product.picture) %> />
+  </div>
+  <div class='list-item-information'>
+    <div class='name'><%= @product.name %></div>
+    <div class='company'><%= @product.company %></div>
+    <div class='price'><%= number_to_currency(@product.price) %></div>
+    <%= link_to "Buy Now", @product.buy_online, class: 'btn btn-primary' %>
+
+    <div class='ingredient-section'>
+      <span>Ingredients</span>
+      <div><%= @product.ingredients %></div>
+    </div>
+  </div>
+</div>
