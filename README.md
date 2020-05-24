@@ -27,6 +27,8 @@ Bootstrap: 4.0.0
 - [ ] be able to take in skin type
 - [ ] keep expanding db!
 - [ ] popular look up
+- [ ] switch to normal words
+- [ ] pie chart of breakdown
 
 ## Shoutout
 I got my inspiration from [Hyram's Youtube channel](https://www.youtube.com/channel/UC2sYit3cZ2CuD_8FHYH7O_Q) of him reviewing different skincare products.

@@ -6,7 +6,6 @@ one:
   company: MyString
   name: MyString
   buy_online: MyString
-  ingredients: MyString
 
 two:
   price: 
@@ -14,4 +13,3 @@ two:
   company: MyString
   name: MyString
   buy_online: MyString
-  ingredients: MyString
