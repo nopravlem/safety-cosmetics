@@ -7,13 +7,21 @@
     <div class='name'><%= @product.name %></div>
     <div class='company'><%= @product.company %></div>
     <div class='price'><%= number_to_currency(@product.price) %></div>
-    <%= link_to "Buy Now", @product.buy_online, class: 'btn btn-primary' %>
+    <%= link_to "Buy Online", @product.buy_online, class: 'btn btn-primary buy-now', target: '_blank' %>
 
     <div class='ingredient-section'>
-      <span>Ingredients</span>
+      <span class='title'>Ingredients</span>
+      <div class='legend'>
+        <div class='neutral'>Neutral</div>
+        <div class='bad'>Bad</div>
+        <div class='okay'>Okay</div>
+        <div class='good'>Good</div>
+      </div>
+      <div class='ingredient-list'>
       <% @product.ingredients.each do |ingredient| %>
-        <%= link_to ingredient.name, ingredient_path(ingredient.id) %>
+        <%= link_to ingredient.name, ingredient_path(ingredient.id), class: "rating-#{ingredient.rating_label}" %>,
       <% end %>
+      </div>
     </div>
   </div>
 </div>

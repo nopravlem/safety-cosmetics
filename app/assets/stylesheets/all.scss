@@ -1,7 +1,14 @@
+
+$silver: #aaa;
+$red: #dd3333;
+$yellow: #ffcc00;
+$green: #33bb55;
+
 body {
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
+  font-family: Nunito;
 }
 
 .list-item-image {
@@ -64,6 +71,58 @@ body {
     margin: 8px 0;
     height: 32px;
     padding: 2px;
+    border-radius: 3px;
+  }
+
+  .ingredient-section {
+    .title {
+      display: block;
+    }
+
+    .legend {
+      display: flex;
+      width: 200px;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      font-weight: 700;
+      
+      > div {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .color-sample {
+      width: 1rem;
+      height: 0.5rem;
+      margin-right: 5px;
+    }
+
+    .neutral  { color: $silver; }
+    .bad  { color: $red; }
+    .okay  { color: $yellow; }
+    .good  { color: $green; }
+
+    .ingredient-list {
+      padding: 2px;
+      border-top: 1px solid #666;
+      border-width: thick;
+    }
+  }
+
+  .rating-neutral, .rating-neutral:hover {
+    color: $silver;
+  }
+  .rating-bad, .rating-bad:hover {
+    color: $red;
+  }
+  .rating-okay, .rating-okay:hover {
+    color: $yellow;
+  }
+  .rating-good, .rating-good:hover {
+    color: $green;
   }
 }
+
+
 
