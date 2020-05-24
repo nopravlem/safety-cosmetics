@@ -11,7 +11,9 @@
 
     <div class='ingredient-section'>
       <span>Ingredients</span>
-      <div><%= @product.ingredients %></div>
+      <% @product.ingredients.each do |ingredient| %>
+        <%= link_to ingredient.name, ingredient_path(ingredient.id) %>
+      <% end %>
     </div>
   </div>
 </div>
